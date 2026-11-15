@@ -19,6 +19,15 @@ data={"Matematika": 85, "Fizika": 90, "Tarix": 78}
 natija=calculate_average_grade(data)
 print(round(natija,2))
 
+##3-masala
+
+def remove_duplicates(items: list) -> list:
+    return list(dict.fromkeys(items))
+
+
+element=["olma", "banan", "olma", "anor", "banan"]
+print(remove_duplicates(element))
+
 
 
 
