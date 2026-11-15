@@ -33,4 +33,20 @@ data = [(10, 20, 30, 11), (5, 15), (40,), (7, 8, 50, 3)]
 print(find_top_three_numbers_sorted(data))
 
 
+##4-masala
+
+def calculate_painting_time(pattern: list) -> int: 
+    natija=0
+
+    for i in range(len(pattern)):
+        natija+=2
+        if i < len(pattern) - 1 and pattern[i] != pattern[i+1]:
+            natija += 1
+
+    return natija
+
+pattern = ["Red", "Blue", "Red", "Blue", "Red"] 
+print(calculate_painting_time(pattern)) 
+
+
 
