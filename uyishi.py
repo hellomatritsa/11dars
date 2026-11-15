@@ -22,5 +22,12 @@ words = ["telegram", "Instagram", "hello", "proGram", "diagram", "world"]
 print(ends_with_gram(words))
 
 
+##3-masala
+
+def find_top_three_numbers_sorted(data: list) -> list:
+
+    natija=[tuple(sorted(x, reverse=True)[:3]) for x in data]
+    return natija
+
 
 
