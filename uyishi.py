@@ -49,4 +49,22 @@ pattern = ["Red", "Blue", "Red", "Blue", "Red"]
 print(calculate_painting_time(pattern)) 
 
 
+##5-masala
+
+def find_nearest_vowel(letter: str) -> str:
+    if len(letter) != 1 or letter not in "abcdefghijklmnopqrstuvwxyz":
+        return "faqat bitta kichik harf bo‘lishi kerak"
+
+    unlilar = "aeiou"
+    natija = "a"
+
+    for i in unlilar:
+        if abs(ord(letter) - ord(i)) < abs(ord(letter) - ord(natija)):
+            natija = i
+
+    return natija
+
+
+harf=input("Harf kiriting: ")
+print(find_nearest_vowel(harf))
 
