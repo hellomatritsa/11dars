@@ -29,6 +29,24 @@ element=["olma", "banan", "olma", "anor", "banan"]
 print(remove_duplicates(element))
 
 
+###4-masala
+
+import json
+with open("fayl.json") as ptr:
+    data=json.load(ptr)
+
+def filter_active_employees(file_path: str, min_salary: int = 1000) -> list:
+    lst=[]
+    for i in file_path:
+        if i["is_active"] == True and i["salary"] >= min_salary:
+            lst.append(i)
+
+    return lst
+
+
+print(filter_active_employees(data))
+
+
 
 
 
