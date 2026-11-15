@@ -29,5 +29,8 @@ def find_top_three_numbers_sorted(data: list) -> list:
     natija=[tuple(sorted(x, reverse=True)[:3]) for x in data]
     return natija
 
+data = [(10, 20, 30, 11), (5, 15), (40,), (7, 8, 50, 3)]
+print(find_top_three_numbers_sorted(data))
+
 
 
